@@ -1,0 +1,13 @@
+{
+    "username": "testuser1",
+    "email": "testuser1@gamil.com",
+    "password": "123456"
+}
+
+########
+
+{
+    "username": "testuser2",
+    "email": "testuser2@gamil.com",
+    "password": "123456"
+}

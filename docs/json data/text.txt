@@ -1,0 +1,13 @@
+{
+    "content": "test text 1 with word karamoozi for search query",
+    "dataset": "test dataset 1",
+    "labels": ["test label 1","test label 3"]
+}
+
+###########
+
+{
+    "content": "test text 2 with word django for search query",
+    "dataset": "test dataset 1",
+    "labels": ["test label 2 edited","test label 3"]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "test dataset 1",
+    "created_by": "admin",
+    "labels": [{"name" : "test label 1"},{"name":"test label 2"},{"name":"test label 3"}]
+}
+
+###########
+
+{
+    "title": "test dataset 2",
+    "created_by": "admin",
+    "labels": [{"name" : "test label 3"},{"name":"test label 4"},{"name":"test label 5"}]
+}
