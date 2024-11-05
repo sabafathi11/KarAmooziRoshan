@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
+from .models import ActivityLog, Report
 
 User = get_user_model()
 
@@ -42,3 +43,17 @@ class UserSerializer(serializers.ModelSerializer):
             instance.set_password(password)
         instance.save()
         return instance
+
+
+class ActivityLogSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ActivityLog
+        fields = ['user', 'action', 'timestamp', 'report']
+
+
+class ReportSerializer(serializers.ModelSerializer):
+    activities = ActivityLogSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Report
+        fields = ['created_at', 'activities']
